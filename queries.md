@@ -10,7 +10,7 @@ select \* from customers where postalcode = '1010'
 
 ## find the phone number for the supplier with the id 11. Should be (010) 9984510.
 
-select \* from suppliers where supplierid = 11
+select phone from suppliers where supplierId = 11
 
 ## list orders descending by the order date. The order with date 1997-02-12 should be at the top.
 
@@ -31,6 +31,8 @@ INSERT INTO customers(CustomerName, contactName, address, city, postalCode, coun
 ## update _Bilbo Baggins_ record so that the postal code changes to _"11122"_.
 
 update customers set PostalCode = '11122' where postalCode = '111'
+
+STRETCH ---------------------------------------------------------
 
 ## list orders grouped by customer showing the number of orders per customer. _Rattlesnake Canyon Grocery_ should have 7 orders.
 
